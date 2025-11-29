@@ -1,4 +1,4 @@
-fetch('path.json')
+fetch('./path.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('読み込み失敗: ' + response.statusText);
@@ -49,9 +49,9 @@ function AddArticleCard(data,ArticleName){
   Card_Button.id = `${ArticleName}_Card_Button`;
   Card_Button.className = "btn btn-primary";
   Card_Button.textContent = "ページへ移動";
-  Card_Button.href = `/viewer.html?article=${ArticleName}`;
+  Card_Button.href = `./viewer.html?article=${ArticleName}`;
   Card_Body.appendChild(Card_Button);
-  
+
   Col.appendChild(Card);
   document.getElementById('CardBox').appendChild(Col);
 }

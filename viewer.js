@@ -1,4 +1,4 @@
-fetch('path.json')
+fetch('./path.json')
   .then(response => {
     if (!response.ok) {
       throw new Error('読み込み失敗: ' + response.statusText);
@@ -10,7 +10,7 @@ fetch('path.json')
     data = data_gained;
     document.getElementById("Page_Title").textContent = data["name"];
     var query = new URL(decodeURIComponent(document.location.href)).searchParams.get("article");
-    fetch(`src/${query}.html`)
+    fetch(`./src/${query}.html`)
       .then(res => res.text())
       .then(html => {
 
@@ -53,11 +53,11 @@ fetch('path.json')
         document.getElementById("Button_home").href = `menu.html`;
         if (previous_article != undefined){
           document.getElementById("Button_previous").textContent = `前の記事：${previous_article}`;
-          document.getElementById("Button_previous").href = `/viewer.html?article=${previous_article}`;
+          document.getElementById("Button_previous").href = `./viewer.html?article=${previous_article}`;
         }
         if (next_article != undefined){
           document.getElementById("Button_next").textContent = `次の記事：${next_article}`;
-          document.getElementById("Button_next").href = `/viewer.html?article=${next_article}`;
+          document.getElementById("Button_next").href = `./viewer.html?article=${next_article}`;
         }
 
 
