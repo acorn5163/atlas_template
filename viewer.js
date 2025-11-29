@@ -53,11 +53,11 @@ fetch('./path.json')
         document.getElementById("Button_home").href = `menu.html`;
         if (previous_article != undefined){
           document.getElementById("Button_previous").textContent = `前の記事：${previous_article}`;
-          document.getElementById("Button_previous").href = `./viewer.html?article=${previous_article}`;
+          document.getElementById("Button_previous").href = `${window.location.pathname.replace(/[^\/]*$/, '')}viewer.html?article=${previous_article}`;
         }
         if (next_article != undefined){
           document.getElementById("Button_next").textContent = `次の記事：${next_article}`;
-          document.getElementById("Button_next").href = `./viewer.html?article=${next_article}`;
+          document.getElementById("Button_next").href = `${window.location.pathname.replace(/[^\/]*$/, '')}viewer.html?article=${next_article}`;
         }
 
 

@@ -49,7 +49,7 @@ function AddArticleCard(data,ArticleName){
   Card_Button.id = `${ArticleName}_Card_Button`;
   Card_Button.className = "btn btn-primary";
   Card_Button.textContent = "ページへ移動";
-  Card_Button.href = `./viewer.html?article=${ArticleName}`;
+  Card_Button.href = `${window.location.pathname.replace(/[^\/]*$/, '')}viewer.html?article=${ArticleName}`;
   Card_Body.appendChild(Card_Button);
 
   Col.appendChild(Card);
