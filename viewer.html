@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="jp">
+<header>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#" id="Page_Title">Atlasez</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/menu.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="viewer.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</header>
+<body>
+    <div class="row align-items-start">
+        <div class="col-3 sticky-top" id="BoxShortcut" ><p>目次</p><hr></div>
+        <div class="col-8">
+            <div><main id="content"></main></div>
+            <hr>
+        </div>
+    </div>
+    <div class="row align-items-start">
+        <div class = "col-3">
+
+        </div>
+        <div class = "col-8 text-center">
+            <div class=" btn-group " role="group" aria-label="Basic outlined example">
+                <a type="button" class="btn btn-outline-primary" id="Button_previous"></a>
+                <a type="button" class="btn btn-outline-primary" id="Button_home">ホーム</a>
+                <a type="button" class="btn btn-outline-primary" id="Button_next"></a>
+            </div>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeRAViBF69ivX1lCNndGngwIb133gn6ZyihVfQUnf73_gH5jQ/viewform?embedded=true" srcdoc="
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+*{
+            font-family:'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+}
+h3{
+margin:0px;
+}
+form{
+  width:100%;
+  margin:0px auto;
+}
+.item{
+  margin-bottom:0px;
+}
+label{
+  width:100%;
+display:flex;
+margin-bottom:-15px;
+}
+.inputs{
+  width:100%;
+  box-sizing:border-box;
+font-family : inherit;
+}
+input[type='text'],input[type='email']{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding:10px;
+  font-size: 15px;
+  height:40px;
+}
+textarea{
+  border: solid 1px #aaa;
+  border-radius:5px;
+  padding: 10px;
+  height: 100px;
+  font-size: 15px;
+  resize:none;
+}
+.btn-area{
+  text-align: center;
+}
+button[type='submit']{
+  background: #1e88c5;
+  border-radius:5px;
+  border: none;
+  color: white;
+  font-size:17px;
+  font-weight:bold;
+  padding: 10px 20px;
+  margin-top:10px;
+}
+.submitbutton{
+  text-align:right;
+}
+.label1{
+  border-left:solid 3px #1e88c5;
+  padding-left: 10px;
+  height:25px;
+}
+.label2{font-size:10px;color:red;}
+::placeholder{
+            font-family:'Yu Gothic Medium', '游ゴシック Medium', YuGothic, '游ゴシック体', 'ヒラギノ角ゴ Pro W3', 'メイリオ', sans-serif;
+font-size:13px;
+}
+@media screen and (min-width:800px){
+textarea{height:140px;}
+.item{display:flex;margin-top:20px;}
+.inputs{width:180%;margin-left:5%;}
+}
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h3&gt;意見・感想フォーム&lt;/h3&gt;
+    &lt;form target='hidden_iframe' onsubmit='submitted=true;' action='https://docs.google.com/forms/u/0/d/e/1FAIpQLSfERDRTkOyJ9u9EGSFMjUGknfvHpmfrDxIki36G-88_1tK3VA/formResponse' method='POST'&gt;
+        &lt;div class='item'&gt;&lt;label for='1'&gt;&lt;p class='label1'&gt;お名前（ニックネームも可）&lt;span class='label2'&gt;必須&lt;/span&gt;&lt;/p&gt;&lt;/label&gt;&lt;input class='inputs' id='1' type='text' name='entry.1202416584' required&gt;&lt;/div&gt;
+        &lt;div class='item'&gt;&lt;label for='2'&gt;&lt;p class='label1'&gt;意見・提案・要望など　&lt;span class='label2'&gt;必須&lt;/span&gt;&lt;/p&gt;&lt;/label&gt;&lt;textarea class='inputs' id='2' name='entry.2034478961' placeholder='例）この反応について扱ってほしい
+　　誤りを見つけた
+　　ここを改善すると良いと思う
+　　こんなページを作ってほしい' required&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;div class='item'&gt;&lt;label for='3'&gt;&lt;p class='label1'&gt;感想・コメントなど&lt;/p&gt;&lt;/label&gt;&lt;textarea class='inputs' id='3' name='entry.1246103925'&gt;&lt;/textarea&gt;&lt;/div&gt;
+        &lt;div class='submitbutton'&gt;&lt;button type='submit'&gt;送信&lt;/button&gt;&lt;/div&gt;
+    &lt;/form&gt;
+
+&lt;script type='text/javascript'&gt;var submitted = false;&lt;/script&gt;
+&lt;iframe name='hidden_iframe' style='display:none;' id='hidden_iframe' onload='if(submitted){document.documentElement.innerHTML =`&lt;html&gt;&lt;head&gt;&lt;style&gt;body{font-family:&quot;Yu Gothic Medium&quot;, &quot;游ゴシック Medium&quot;, YuGothic, &quot;游ゴシック体&quot;, &quot;ヒラギノ角ゴ Pro W3&quot;, &quot;メイリオ&quot;, sans-serif;}&lt;/style&gt;&lt;/head&gt;&lt;body&gt;&lt;h3&gt;意見・感想フォーム&lt;/h3&gt;&lt;p&gt;フォームを送信しました。&lt;br&gt;いただいたご意見・ご感想は今後のサイトづくりの参考にさせていただきます。&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;`;}'&gt;&lt;/iframe&gt;
+&lt;/body&gt;
+&lt;/html&gt;"></iframe>
+        </div>
+    </div>
+            
+
+<footer><p>©2024 Atlasez</p></footer>
+
+        </div>
+    </div>    
+    
+
+</body>
+<script src="viewer.js"></script>
+</html>
